@@ -70,7 +70,7 @@ function knightMoves(start, destination) {
   }
 
   let matchingLeafNodes = null;
-  // Limit max depth for either trees is 3.
+  // Max depth for either tree is 3. (Where root is depth 0).
   for (let i = 0; i < 3; i += 1) {
     treeA.leafOrder(addAllLegalMovesAsChildren);
     treeB.leafOrder(addAllLegalMovesAsChildren);
